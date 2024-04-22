@@ -1,4 +1,4 @@
-<p align="center">Dictionary CLI</p>
+# <p align="center">Dictionary CLI</p>
 <p align="center">
     <a href="https://github.com/Rajkumarpaneru18/Dictionary-cli/watchers" target="_blank">
         <img src="https://img.shields.io/github/watchers/Rajkumarpaneru18/Dictionary-cli?style=for-the-badge&logo=appveyor" alt="Watchers"/>
