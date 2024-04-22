@@ -1,0 +1,28 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SusheelThapa/dictionary-cli.git"
+  },
+  "author": "Susheel Thapa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SusheelThapa/dictionary-cli/issues"
+  },
+  "homepage": "https://github.com/SusheelThapa/dictionary-cli#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "puppeteer-core": "^22.6.5"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  }
+}
