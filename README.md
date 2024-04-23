@@ -51,7 +51,8 @@ In academic environments or situations where distractions need to be minimized, 
 
 ## Demo
 
-https://github.com/SusheelThapa/dictionary-cli/assets/83917129/e8c9e4b6-c9c2-455a-8697-7495d319eca7
+https://github.com/SusheelThapa/from_taipy_census/assets/83917129/95d90f86-e1e4-4883-ae15-a3f4af116e7f
+
 ## Installation
 1. Clone the repository 
    ```
