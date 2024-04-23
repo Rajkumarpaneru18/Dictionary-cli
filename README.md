@@ -50,29 +50,72 @@ In academic environments or situations where distractions need to be minimized, 
 
 
 ## Demo
-
+https://github-production-user-asset-6210df.s3.amazonaws.com/83917129/324721356-e8c9e4b6-c9c2-455a-8697-7495d319eca7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240423%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240423T065320Z&X-Amz-Expires=300&X-Amz-Signature=b26f945d9d3ceea71358595eff5c05bd685907c991d666138a9bf2025a8d21cc&X-Amz-SignedHeaders=host&actor_id=98498538&key_id=0&repo_id=788776457
 ## Installation
 1. Clone the repository 
    ```
-    git clone https://github.com/Rajkumarpaneru18/Dictionary-cli.git
+   git clone https://github.com/Rajkumarpaneru18/Dictionary-cli.git
 
    ```
 
-2. Change the directory to the core 
-   ```
+### Backend
+1. Change the directory to core
+    ```
     cd core
+
    ```
-3. Installation of Node.js packages
+2. Installation of Node.js packages
    ```
    npm install
+   
+   ```
+3. Install the Puppeteer 
+   ```
+    npm install puppeteer
+   
+   ```
+
+iv. add .env file to 
+```
+BROWSERLESS_URL=ws://localhost:3000?token=6R0W53R135510
+PORT=5000
+DICTIONARY_URL=http://www.dictionary.com/browse/
+DICTIONARY_SELECTOR=ol > li:nth-child(1) >span> .NZKOFkdkcvYgD3lqOIJw
+OED_URL=http://www.oed.com/search/dictionary/?scope=Entries&q=
+OED_SELECTOR=.snippet
+MERRIAM_URL=http://www.merriam-webster.com/dictionary/
+MERRIAM_SELECTOR=div > span > .dtText
+GOOGLE_URL=https://www.google.com/search?q=
+```
+### CLI
+1. change the directory to cli
+   ```
+   cd cli
+  
+   ```
+2. install
+   ```
+   npm install nodemon --save-dev
+   
+    ```
+### To run program
+1. run the docer
+   ```
+   #! /bin/bash
+
+   sudo docker run --rm -p 3000:3000 -e MAX_CONCURRENT_SESSIONS=10 browserless/chrome:latest
+   ```
+2. run backend
+    ```
+    npm run dev
+   ```
+3. run cli
+    ```
+    ./cli.py -i
+     ./cli.py -g (word to search from google)
+    ./cli.py -m (word to search from merriam-webster)
 
    ```
-4. Install the Puppeteer 
-   ```
-   npm install puppeteer
-
-   ```
-
 ## Usages
 - Quick Word Definitions: Simply enter the word you want to look up, and Dictionary CLI will fetch and display its meaning from online sources.
 - Distraction-Free: Stay focused on your tasks without the need to open a web browser or navigate through online dictionaries.
